@@ -7,10 +7,7 @@ pipeline:
   build:
     image: alpine
     commands:
+      - apk add curl
+      - /bin/sh syncArgocd.sh
       - echo "efzefze" > ete.txt
-  list:
-    image: busybox
-    commands:
-      - cat ete.txt
-      - docker images
       
