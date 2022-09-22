@@ -21,9 +21,9 @@ spec:
         app: ecsdemo-nodejs
     spec:
       containers:
-      - image: brentley/ecsdemo-nodejs:latest
+      - image: aminegongi/staticwebapp:latest
         imagePullPolicy: Always
         name: ecsdemo-nodejs
         ports:
-        - containerPort: 3000
+        - containerPort: 80
           protocol: TCP
